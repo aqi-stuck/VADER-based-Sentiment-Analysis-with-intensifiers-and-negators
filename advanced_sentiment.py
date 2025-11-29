@@ -84,9 +84,7 @@ def analyze(text):
 
         adjusted *= modifier
 
-        negated = any(
-            words[j].lower() in NEGATIONS for j in range(max(0, i - 3), i)
-        )
+        negated = any(words[j].lower() in NEGATIONS for j in range(max(0, i - 3), i))
         if negated:
             adjusted *= -1.0
 
@@ -130,5 +128,6 @@ def _main():
             print("\nKey Words:")
             for item in highlights:
                 print(f"  • {item}")
-        print("24*-\n")
+        print("*************-\n")
+if __name__ == "__main__":
     _main()
