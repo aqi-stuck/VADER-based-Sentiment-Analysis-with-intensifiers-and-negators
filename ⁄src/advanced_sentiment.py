@@ -115,7 +115,7 @@ def _main():
     print("=" * 50)
     while True:
         inp = input("-> ").strip()
-        if inp.lower() in {"exit", "quit", "q"}:
+        if inp.lower() in {"exit", "q"}:
             print("Goodbye!")
             break
         if not inp:
